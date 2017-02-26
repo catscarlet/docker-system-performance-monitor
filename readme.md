@@ -40,3 +40,5 @@ Memory monitor now only detect your SWAP. If it is more than the last result, it
 ## Links
 
 This project's idea is from my old project <https://github.com/catscarlet/system_performance_monitor>, but this one use Docker to deploy, much easier!
+
+PHPMailer is used for mailing: <https://github.com/PHPMailer/PHPMailer>
