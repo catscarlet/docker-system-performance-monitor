@@ -1,1 +1,0 @@
-Here store the logs.

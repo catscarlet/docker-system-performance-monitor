@@ -1,8 +1,0 @@
-version: '2'
-services:
-    system-performance-monitor-php:
-        image: system-performance-monitor-php:local
-        restart: always
-        volumes:
-            - /etc/hostname:/root/docker-system-performance-monitor/hosthostname:ro
-            - /var/www/sunfu_git/docker-system-performance-monitor/config.json:/root/docker-system-performance-monitor/config.json
