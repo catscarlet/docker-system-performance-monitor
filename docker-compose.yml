@@ -1,0 +1,8 @@
+version: '2'
+services:
+    system-performance-monitor-php:
+        image: git.sunfuedu.com:5000/private-docker-registry/system-performance-monitor-php:latest
+        restart: always
+        volumes:
+            - /etc/hostname:/root/docker-system-performance-monitor/hosthostname:ro
+            - /root/docker-system-performance-monitor/config.json:/root/docker-system-performance-monitor/config.json

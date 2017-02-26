@@ -1,0 +1,43 @@
+{
+    "descritpion": "system-performance-monitor-php",
+    "config": {
+        "main": {
+            "host_alias": "",
+            "filepath": "/root/docker-system-performance-monitor/log/monitor.json",
+            "test": 0,
+            "cpustat": "php_cpustat"
+        },
+        "check": {
+            "cpu": {
+                "on": 1,
+                "readcpustathistory": 5,
+                "threshold_times": 2,
+                "threshold_percent": 10
+            },
+            "memory": {
+                "on": 1
+            },
+            "disk": {
+                "on": 1,
+                "threshold_percent": 90
+            }
+        },
+        "email": {
+            "on": 0,
+            "smtpserver": "",
+            "smtpserverport": "",
+            "smtpusermail": "",
+            "smtpuser": "",
+            "smtppass": "",
+            "smtpsecure": "",
+            "to": []
+        },
+        "wechat": {
+            "on": 0,
+            "appid": "",
+            "appsecret": "",
+            "tplid": "",
+            "to": []
+        }
+    }
+}
